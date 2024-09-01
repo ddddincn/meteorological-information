@@ -127,8 +127,8 @@ void initRoute() {
 int main() {
     initRoute();
     Server server(
-        1316, 3, 60000, false,                                                          /* 端口 ET模式 timeoutMs 优雅退出  */
-        "47.76.100.96", 3306, "dddd", "S67fi6GPTy6D7NGB", "meteorological_observation", /* Mysql配置 */
-        4, 6);                                                                          /* 连接池数量 线程池数量*/
+        1316, 3, 60000, false,           /* 端口 ET模式 timeoutMs 优雅退出  */
+        "ip", 3306, "user", "pwd", "db", /* Mysql配置 */
+        4, 6);                           /* 连接池数量 线程池数量*/
     server.Start();
 }
